@@ -107,6 +107,7 @@ function userAlert(e) {
 }
 
 function showMessage(e) {
+	console.log(e)
     if (e.type === 'LEAVE') {
         $('#userinfo').append("<tr><td class='new-user-joined'>" + e.name + " " + e.content + "</td></tr>")
     } else {
